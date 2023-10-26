@@ -1,0 +1,133 @@
+html, body {
+  height: 100%;
+  padding: 5px;
+  overflow: hidden;
+}
+
+body {
+  background-image: linear-gradient(#7C4397, #D22735);
+}
+
+h1 {
+  text-align: center;
+  margin: 2.5%;
+}
+
+#pregunta {
+  font-size: 60px;
+}
+
+#primer {
+  height: 75%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+	color: #fff;
+	font-size: 35px;
+}
+
+.custom-button {
+	width: 100px;
+	height: 60px;
+	border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-90deg, #7C4397, #D22735);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-button .circle {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+	top: -30px;
+	transition: 0.2s;
+}
+
+.custom-button:hover .circle {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5; 
+}
+
+.modal-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#7C4397, #D22735);
+}
+
+#contingut {
+    height: 80%;
+    width: 80%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección a columna */
+    justify-content: space-between; /* Espaciado entre los elementos */
+    align-items: center; /* Alineación al centro horizontal */
+    padding: 20px; /* Agregamos un poco de espacio interno */
+}
+
+#text {
+    color: #FFF;
+    font-size: 50px;
+	margin-top: 5%;
+    margin-bottom: auto; /* Empuja el elemento hacia arriba */
+}
+
+#text2 {
+    color: #FFF;
+    font-size: 70px;
+    margin-left: -50%; /* Margen izquierdo para separar del borde */
+	margin-bottom: 5%;
+}
+
+#cor {
+	width: 30%;
+	position: absolute;
+	right: 9%;
+	bottom: 7%
+}
+
+.hidden {
+    display: none;
+}
+
+#No {
+  cursor: auto;
+  position: absolute;
+  right: 30%;
+}
+
+#Si {
+  position: absolute;
+  left: 30%;
+}
